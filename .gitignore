@@ -1,0 +1,3 @@
+# To ignore db.sqlite3 from any commits/push
+
+db.sqlite3
