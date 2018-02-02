@@ -2,16 +2,9 @@ from django.shortcuts import render
 from django.contrib.auth import authenticate, login, logout
 from django.http import HttpResponseRedirect, HttpResponse
 from django.core.urlresolvers import reverse
-from rango.forms import UserForm, UserProfileForm
+from rango.forms import CategoryForm, PageForm, UserForm, UserProfileForm
 from django.contrib.auth.decorators import login_required
-
-# Import the Category model
-from rango.models import Category
-
-# Import the Page model
-from rango.models import Page
-
-from rango.forms import CategoryForm, PageForm
+from rango.models import Category, Page
 
 
 def index(request):
