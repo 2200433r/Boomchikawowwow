@@ -3,11 +3,11 @@
 {% load staticfiles %}
 
 {% block title_block %}
-    Add a Category
+    Add Category
 {% endblock %}
 
 {% block body_block %}
-    <h1>Add a Category</h1>
+    <h1>Add Category</h1>
     <div>
         {% if user.is_authenticated %}
         <form id="category_form" method="post" action="/rango/add_category/">
